@@ -1,0 +1,88 @@
+{
+  "name": "Student Intake Form",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Student Intake",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 1,
+      "position": [260, 200],
+      "parameters": {
+        "name": "Student Intake Form",
+        "formId": "student-intake",
+        "fields": [
+          {
+            "fieldId": "full_name",
+            "label": "Full Name (全名)",
+            "type": "string",
+            "required": true
+          },
+          {
+            "fieldId": "age",
+            "label": "Age (年龄)",
+            "type": "number",
+            "required": true
+          },
+          {
+            "fieldId": "city_country",
+            "label": "City and Country of Residence (所在城市和国家)",
+            "type": "string",
+            "required": true
+          },
+          {
+            "fieldId": "wechat_id",
+            "label": "WeChat ID (微信号)",
+            "type": "string",
+            "required": true
+          },
+          {
+            "fieldId": "phone_number",
+            "label": "Phone Number (电话号码)",
+            "type": "string",
+            "required": true
+          },
+          {
+            "fieldId": "email",
+            "label": "Email Address (电子邮箱)",
+            "type": "email",
+            "required": true
+          },
+          {
+            "fieldId": "english_level",
+            "label": "What is your current English level? (您目前的英语水平是？)",
+            "type": "dropdown",
+            "required": true,
+            "options": [
+              { "name": "Beginner (初学者)",  "value": "beginner" },
+              { "name": "Elementary (基础)", "value": "elementary" },
+              { "name": "Intermediate (中级)", "value": "intermediate" },
+              { "name": "Advanced (高级)",    "value": "advanced" },
+              { "name": "Not sure (不确定)",  "value": "not_sure" },
+              { "name": "Other",             "value": "other" }
+            ]
+          },
+          {
+            "fieldId": "improvement_focus",
+            "label": "What would you like to improve most in your English? (您最想提高英语的哪些方面？)",
+            "type": "multi-select",
+            "required": true,
+            "options": [
+              { "name": "Speaking (口语)",    "value": "speaking" },
+              { "name": "Listening (听力)",   "value": "listening" },
+              { "name": "Reading (阅读)",     "value": "reading" },
+              { "name": "Writing (写作)",     "value": "writing" },
+              { "name": "Vocabulary (词汇)",  "value": "vocabulary" },
+              { "name": "Grammar (语法)",     "value": "grammar" }
+            ]
+          }
+        ],
+        "style": {
+          "primaryColor": "#0066cc"
+        }
+      }
+    }
+  ],
+  "connections": {},
+  "active": false,
+  "settings": {}
+}
